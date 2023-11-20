@@ -5,7 +5,8 @@
 <div class="main">
 	<Navbar/>
 	<div class="alert">
-		Due to some backend API changes that are pending implementation, some links may not be functional yet.
+		Due to some breaking backend API changes that are pending implementation, some links may not be functional yet.<br/>
+		This afffects the Frontend only, and the API is still functional.
 	</div>
 	<slot />
 </div>
