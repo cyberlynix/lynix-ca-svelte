@@ -4,8 +4,8 @@
 
 <div class="header" style="position:relative;">
 	<img
-		src="https://www.thetimes.co.uk/travel/wp-content/uploads/sites/6/2021/06/Toronto-Ontario-Canada_Credit_GettyImages-1001151076-1.jpg?w=2200&h=880&crop=1"
-		alt="Lynix's Fursona Refsheet made by Maxwell_Wolf"
+		src="/img/events/fe2024.png"
+		alt="Hero for Furnal Equinox 2024"
 	/>
 	<div class="header-content">
 		<div>
