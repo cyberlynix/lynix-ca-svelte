@@ -35,6 +35,7 @@
         align-items: center;
         gap: 1rem;
         margin-top: 15px;
+		margin-bottom: 3rem;
     }
 
     .btn-contact, .btn-projects {
@@ -101,6 +102,7 @@
 		width: 100%;
 		max-width: 450px;
 		height: 355px;
+		margin-top: 3rem;
 	}
 
 	.lynix-solo,

@@ -15,3 +15,24 @@ a:link, a:visited, a {
     src: url("/fonts/cyber.ttf");
 }
   
+/* ============= Scrollbar ============= */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-darker;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-cyan-600;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-cyan-700;
+  }
