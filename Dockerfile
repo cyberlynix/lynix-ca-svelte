@@ -2,7 +2,7 @@ FROM node:20.9.0-alpine3.18 AS builder
 WORKDIR /app
 
 # Install dependencies
-COPY package*.json .
+COPY package*.json ./
 RUN npm ci
 COPY . .
 RUN npm run build
