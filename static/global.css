@@ -1,0 +1,17 @@
+:root {
+    background-color: #0a0a0a;
+    color: hsl(240, 5%, 65%);
+    font-family: Cyber, sans-serif;
+}
+
+a:link, a:visited, a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ============= Fonts ============= */
+@font-face {
+    font-family: Cyber;
+    src: url("/fonts/cyber.ttf");
+}
+  
