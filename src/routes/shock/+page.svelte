@@ -79,16 +79,19 @@
 
 				socket.emit('message', vibrateCommand);
 
-				if (countdown <= 1) {
+				if (countdown <= 0) {
 					
-					let shockCommand = {
-    					id: clientId,
-    					command: { action: "Shock", "intensity": intensity, "duration": duration }
-					}
+					// Delay Shock Command for 2 seconds
+					setTimeout(() => {
+						let shockCommand = {
+							id: clientId,
+							command: { action: "Shock", "intensity": intensity, "duration": duration }
+						}
 
-					socket.emit('message', shockCommand);
+						socket.emit('message', shockCommand);
 
-					console.warn('Sending shock command');
+						console.warn('Sending shock command');
+					}, 1500);
 
 
 					clearInterval(interval);
@@ -96,7 +99,7 @@
 
 					countdownText = ''; // Reset countdown text
 				}
-			}, 2000);
+			}, 1000);
 		} else {
 			let shockCommand = {
     			id: clientId,
