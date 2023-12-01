@@ -79,10 +79,8 @@
 
 				socket.emit('message', vibrateCommand);
 
-				if (countdown <= 0) {
-					clearInterval(interval);
-					//socket?.send('shock');
-
+				if (countdown <= 1) {
+					
 					let shockCommand = {
     					id: clientId,
     					command: { action: "Shock", "intensity": intensity, "duration": duration }
@@ -90,11 +88,22 @@
 
 					socket.emit('message', shockCommand);
 
+					console.warn('Sending shock command');
+
+
+					clearInterval(interval);
+					//socket?.send('shock');
+
 					countdownText = ''; // Reset countdown text
 				}
 			}, 2000);
 		} else {
-			socket?.send('shock');
+			let shockCommand = {
+    			id: clientId,
+    			command: { action: "Shock", "intensity": intensity, "duration": duration }
+			}
+
+			socket.emit('message', shockCommand);
 		}
 	};
 </script>
