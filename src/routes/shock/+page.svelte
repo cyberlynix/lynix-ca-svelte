@@ -24,7 +24,7 @@
 	let countdownText = ''; // Display text for countdown
 
 	onMount(() => {
-		socket = io('http://23.247.168.17:28555', { transports: ['websocket'] });
+		socket = io('https://auth.lynix.ca/', { transports: ['websocket'] });
 		socket.on('connect', () => {
 			console.log('Connected to server');
 			serverConnected = true;
