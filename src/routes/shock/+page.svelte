@@ -155,7 +155,7 @@
 		<br />
 
 		<button class="btn btn-primary" on:click={shock}>Shock</button>
-		<button class="btn btn-primary" on:click={shock}>Vibrate</button>
+		<button class="btn btn-primary" on:click={vibrate}>Vibrate</button>
 	{:else}
 		<p>Server Not Connected!</p>
 	{/if}
